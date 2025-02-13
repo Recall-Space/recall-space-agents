@@ -44,7 +44,7 @@ Internally, the `Supervisor` acts as a human proxy, commanding AI `Workers`.
 with the plan flag activated.
 
 
-:::mermaid
+```mermaid
 classDiagram
     class Worker {
         <<abstract>>
@@ -71,7 +71,7 @@ classDiagram
     Worker <|-- SiteWorkbookManager
     Supervisor "1" *-- "*" Worker : manages
     ApplicationGraph "1" *-- "1" Supervisor : uses
-:::
+```
 
 + **Realized Workers**: These are agents whose only tools are Recall Space Toolkits. 
 This means their entire job is to fulfill tasks that are related to their attached toolkits.
@@ -164,7 +164,7 @@ Overall, the 'VIPUserApp' workflow enhances user engagement, promotes our unique
 offerings, and strengthens relationships with key clients—all while efficiently 
 managing interactions based on each user's subscription status.
 
-:::mermaid
+```mermaid
 graph TD
     Start[Start] --> CheckUserType{Is the user a paying user?}
     CheckUserType -- Yes --> PaidApplication[Invoke **Paid Application**]
@@ -183,7 +183,7 @@ graph TD
     SendEmail2 --> End
 
     End[End]
-:::
+```
 
     
 ## Define Free and Paid app.
@@ -294,7 +294,7 @@ response = await demo_app.ainvoke(
 )
 ```
 
-:::mermaid
+```mermaid
 graph TD;
     __start__ --> is_paid_user_node;
 
@@ -323,7 +323,7 @@ graph TD;
         email_manager_free --> supervisor_free;
         supervisor_free --> __end__;
     end
-:::
+```
 
 # ❕ Key Notes on VIPUserApp
 
