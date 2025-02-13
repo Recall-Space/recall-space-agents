@@ -7,7 +7,7 @@ from setuptools import find_namespace_packages, setup
 
 setup(
     name="recall-space-agents",
-    version="1.0.0",
+    version="0.0.1",
     description="Agents of recall space.",
     author="Recall Space",
     author_email="info@recall.space",
