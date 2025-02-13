@@ -112,7 +112,7 @@ response = await demo_application.ainvoke(
     "messages": [("user",
                   """
         Perform the following sequence
-        1. Retrive the most recent email sent by 'gari.ciodaro@recall.space',
+        1. Retrive the most recent email sent by 'user@example.com',
         2. Add a new row to the table 'SupplierMasterDataTable' with the content of email.
             here are the parameters:
             worksheet: 'suppliermasterdata'
